@@ -166,6 +166,15 @@
 	--ion-color-tint: var(--ion-color-task-grey-tint);
 }
 
+.ion-color-task-light-grey {
+	--ion-color-base: var(--ion-color-task-light-grey);
+	--ion-color-base-rgb: var(--ion-color-task-light-grey-rgb);
+	--ion-color-contrast: var(--ion-color-task-light-grey-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-task-light-grey-contrast-rgb);
+	--ion-color-shade: var(--ion-color-task-light-grey-shade);
+	--ion-color-tint: var(--ion-color-task-light-grey-tint);
+}
+
 
 @media (prefers-color-scheme: light) {
   /*

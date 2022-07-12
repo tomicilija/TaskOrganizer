@@ -12,17 +12,6 @@ ion-img {
   margin: 20px auto;
 }
 
-// Center buttons and make them wide and dorp shadow
-ion-button {
-  margin: 10px auto;
-  height: 50px;
-  width: 100%;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-    1px 2px 6px rgba(0, 110, 233, 0.1);
-  border-radius: 10px;
-}
-
 // Make page fit fullscreen and elements equaly separated
 ion-card {
   display: flex;
@@ -37,19 +26,11 @@ ion-card {
   gap: 20px;
 }
 
+// Make time & place & note close togeter
 ion-item {
   --min-height: 0;
   width: 100%;
   padding: 0;
-}
-
-// Button font
-ion-button ion-text {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
 }
 
 // Dont show shadow on Cards for cleaner look
@@ -75,7 +56,7 @@ ion-card-content {
   font-size: 14px;
   line-height: 100%;
   padding: 10px 10px;
-  
+  // Line beetween header and content
   border-bottom: 1px solid #0009E7;
 }
 
@@ -95,4 +76,31 @@ ion-card-content {
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
+}
+
+ion-footer{
+    width: 100%;
+}
+
+ion-toolbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    margin: auto;
+
+    width: 100%;
+
+    --border-width: 0 !important;
+}
+
+.add-button{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+ion-fab-button{
+    margin: auto;
+    --box-shadow: none !important;
 }

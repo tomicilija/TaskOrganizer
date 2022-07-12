@@ -1,0 +1,49 @@
+<!-- Main - Landing page when logged in  -->
+<!-- ionic generate page Main -->
+<!-- App is fullscrean and it is one page only without scroll -->
+<ion-content [fullscreen]="true" scroll-y="false">
+  <!-- Card has drop shadow and border by default -->
+  <ion-card class="card-gap no-shadow ion-no-padding ion-margin-vertical">
+    <!-- Header with app Tittle -->
+    <ion-card-header>
+      <!-- All caps text & Center text -->
+      <ion-card-title class="ion-text-uppercase ion-text-center">
+        <ion-text color="task-blue"> finder </ion-text>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+
+
+  <!-- Footer -->
+  <ion-footer
+    color="task-white"
+    class="ion-no-padding ion-no-margin ion-justify-content-start"
+    lines="none"
+  >
+      <ion-fab-button [routerLink]="['/add-new-task']" class="ion-justify-content-center add-button" color="task-blue">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-item
+        class="ion-no-padding ion-justify-content-center no-shadow"
+        color="task-white"
+        lines="none"
+      >
+      <ion-fab-button [routerLink]="['/monthly-view']"  class="ion-no-margin no-shadow" color="task-white">
+        <ion-icon name="calendar-outline" color="task-grey"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button [routerLink]="['/task-list']"  class="ion-no-margin" color="task-white">
+        <ion-icon name="time-outline" color="task-grey"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button [routerLink]="['/find']"  class="ion-no-margin" color="task-white">
+        <ion-icon name="search-outline"  color="task-blue"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button [routerLink]="['/alerts-list']"  class="ion-no-margin" color="task-white">
+        <ion-icon name="alarm-outline" color="task-grey"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button [routerLink]="['/main']"  class="ion-no-margin" color="task-white">
+        <ion-icon name="home"color="task-grey"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+  </ion-footer>
+</ion-content>

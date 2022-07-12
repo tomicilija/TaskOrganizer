@@ -61,8 +61,10 @@
         >
           <ion-text color="task-blue"> Forgot password? </ion-text>
         </ion-router-link>
-        <!-- Login button - TODO(click fucntion does nothing - it has to subnit form values) -->
-        <ion-button color="task-blue" (click)="openLogin()">
+        <!-- Login button - TODO(click fucntion just tedirects to main page
+                           - it has to submit form values and authorize access) 
+        -->
+        <ion-button color="task-blue" [routerLink]="['/main']">
           <ion-text
             type="submit"
             color="task-white"
