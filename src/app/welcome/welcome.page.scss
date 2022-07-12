@@ -1,0 +1,52 @@
+// Tittle font
+ion-card-title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+// Image to allow ion-justify-content-center to position in center
+ion-img {
+  margin: auto;
+}
+
+// Center buttons and make them wide and dorp shadow
+ion-button {
+  margin: 10px auto;
+  height: 50px;
+  width: 100%;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    1px 2px 6px rgba(0, 110, 233, 0.1);
+  border-radius: 10px;
+}
+
+// Make page fit fullscreen and elements equaly separated
+ion-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  gap: 50px;
+}
+
+// Make image 50% of screen height
+img {
+  height: 50vh;
+}
+
+// Button font
+ion-button ion-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+// Dont show shadow on Cards for cleaner look
+.no-shadow {
+  box-shadow: none !important;
+}

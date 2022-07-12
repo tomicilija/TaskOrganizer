@@ -1,0 +1,101 @@
+// Tittle font
+ion-card-title {
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  
+  // Text font
+  ion-item ion-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 10px auto;
+    width: 100%;
+  }
+  
+  // Input icon box
+  .input-icon {
+    width: 60px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 10px auto;
+  }
+  
+  // Input font & border
+  ion-input {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 20px !important;
+  
+    height: 45px;
+    border: solid 1px rgba(154, 154, 154, 0.25);
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  // To allow ion-justify-content to position in center or at the end
+  ion-router-link {
+    width: 100%;
+    display: flex;
+  }
+  
+  // Link font
+  ion-router-link ion-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  
+  // Register images (buttons) space evenly apart and center
+  .login-with{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: auto;
+    margin: auto;
+  }
+  
+  
+  // Center button and make them wide and dorp shadow
+  ion-button {
+    margin: 10px auto;
+    height: 50px;
+    width: 100%;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      1px 2px 6px rgba(0, 110, 233, 0.1);
+    border-radius: 10px;
+  }
+  
+  // Make page fit fullscreen and elements equaly separated
+  ion-card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-content: center;
+    height: 100%;
+    gap: 50px;
+  }
+  
+  // Button font
+  ion-button ion-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  
+  // Dont show shadow on Cards for cleaner look
+  .no-shadow {
+    box-shadow: none !important;
+  }
+  

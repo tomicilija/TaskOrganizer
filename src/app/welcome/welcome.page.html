@@ -1,0 +1,38 @@
+<!-- WELCOME - Landing page when not logged in  -->
+
+<!-- App is fullscrean and it is one page only without scroll -->
+<ion-content [fullscreen]="true" scroll-y="false"> 
+  <!-- Card has drop shadow and border by default -->
+  <ion-card class="no-shadow ion-no-padding">
+    <!-- Header with app Tittle -->
+    <ion-card-header>
+      <!-- All caps text & Center text -->
+      <ion-card-title class="ion-text-uppercase ion-text-center">
+        <ion-text color="task-blue"> task organizer </ion-text>
+      </ion-card-title>
+    </ion-card-header>
+    <!-- Welcome Image -->
+    <!-- Item has line at th bottom by default and left space -->
+    <ion-item class="ion-no-padding ion-justify-content-center" lines="none">
+      <ion-img
+        class="ion-justify-content-center"
+        src="../../assets/WelcomeImage.png"
+      ></ion-img>
+    </ion-item>
+    <ion-card-content>
+      <!-- Login button -->
+      <ion-button color="task-blue" [routerLink]="['/login']">
+        <ion-text color="task-white" class="ion-text-capitalize">
+          login
+        </ion-text>
+      </ion-button>
+      <!-- Register button -->
+      <ion-button color="task-white" [routerLink]="['/register']" (click)="openRegister()">
+        <ion-text color="task-blue" class="ion-text-capitalize">
+          register
+        </ion-text>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<!-- Frontend Ends -->

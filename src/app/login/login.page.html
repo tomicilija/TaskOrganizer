@@ -1,0 +1,133 @@
+<!-- LOGIN - log in to an account  -->
+
+<!-- App is fullscrean and it is one page only without scroll -->
+<ion-content [fullscreen]="true" scroll-y="false">
+  <!-- Card has drop shadow and border by default -->
+  <ion-card class="no-shadow ion-no-padding">
+    <!-- Header with app Tittle -->
+    <ion-card-header>
+      <!-- Make space above an bleow (16px) & All caps text & Center text -->
+      <ion-card-title
+        class="ion-margin-vertical ion-text-uppercase ion-text-center"
+      >
+        <ion-text color="task-blue"> task organizer </ion-text>
+      </ion-card-title>
+    </ion-card-header>
+    <!-- Login part -->
+    <ion-card-content class="ion-no-padding">
+      <ion-item
+        class="ion-margin-vertical ion-no-padding ion-justify-content-center"
+        lines="none"
+      >
+        <ion-text class="ion-text-center" color="task-dark">
+          Login to your account
+        </ion-text>
+      </ion-item>
+      <!-- Login form -->
+      <form>
+        <!-- Item has line at th bottom by default and left space -->
+        <ion-item lines="none" class="ion-no-padding">
+          <!-- Email icon -->
+          <ion-item color="task-blue" class="input-icon">
+            <ion-icon color="task-white" name="mail-outline"></ion-icon>
+          </ion-item>
+          <!-- Email textblock -->
+          <ion-input
+            name="email"
+            placeholder="Email"
+            type="email"
+            required="true"
+          ></ion-input>
+        </ion-item>
+        <!-- Item has line at th bottom by default and left space -->
+        <ion-item lines="none" class="ion-no-padding">
+          <!-- Password icon -->
+          <ion-item color="task-blue" class="input-icon">
+            <ion-icon color="task-white" name="lock-closed-outline"></ion-icon>
+          </ion-item>
+          <!-- Password textblock -->
+          <ion-input
+            name="password"
+            placeholder="Password"
+            type="password"
+            required="true"
+          ></ion-input>
+        </ion-item>
+        <!-- Forgot password link - TODO(only routes to register page) -->
+        <ion-router-link
+          class="ion-justify-content-end"
+          color="task-blue"
+          href="register"
+        >
+          <ion-text color="task-blue"> Forgot password? </ion-text>
+        </ion-router-link>
+        <!-- Login button - TODO(click fucntion does nothing - it has to subnit form values) -->
+        <ion-button color="task-blue" (click)="openLogin()">
+          <ion-text
+            type="submit"
+            color="task-white"
+            class="ion-text-capitalize"
+          >
+            login
+          </ion-text>
+        </ion-button>
+      </form>
+      <!-- Or Login with Text -->
+      <ion-item
+        class="ion-margin-vertical ion-no-padding ion-justify-content-center"
+        lines="none"
+      >
+        <ion-text class="ion-text-center" color="task-dark">
+          - Or Login with -
+        </ion-text>
+      </ion-item>
+      <!-- Login Options - TODO(only routes to register page) -->
+      <ion-item lines="none">
+        <ion-item lines="none" class="login-with">
+          <img
+            class="login-with"
+            src="../../assets/icon/GoogleLogo.png"
+            style="width: 30px; height: 30px"
+            [routerLink]="['/register']"
+          /><!-- ng-click="loginGoogle()" -->
+        </ion-item>
+        <ion-item lines="none" class="login-with">
+          <img
+            class="login-with"
+            src="../../assets/icon/FacebookLogo.png"
+            style="width: 15px; height: 30px"
+            [routerLink]="['/register']"
+          /><!-- ng-click="loginFacebook()" -->
+        </ion-item>
+        <ion-item lines="none" class="login-with">
+          <img
+            class="login-with"
+            src="../../assets/icon/TwitterLogo.png"
+            style="width: 30px; height: 24px"
+            [routerLink]="['/register']"
+          /><!-- ng-click="loginTwitter()" -->
+        </ion-item>
+      </ion-item>
+      <!-- Signup Text & Link -->
+      <ion-router-link
+        class="ion-margin-vertical ion-no-padding ion-justify-content-center"
+        color="task-blue"
+        href="register"
+      >
+        <ion-text
+          class="ion-text-center"
+          color="task-dark"
+          style="font-size: 12px; line-height: 18px"
+        >
+          Don&#39;t have an account?
+          <ion-text
+            color="task-blue"
+            style="font-size: 12px; line-height: 18px"
+          >
+            Sign Up
+          </ion-text>
+        </ion-text>
+      </ion-router-link>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
