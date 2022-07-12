@@ -1,16 +1,22 @@
-<!-- Main - Landing page when logged in  -->
-<!-- ionic generate page Main -->
+<!-- Task - Task View page  -->
 <!-- App is fullscrean and it is one page only without scroll -->
 <ion-content [fullscreen]="true" scroll-y="false">
   <!-- Card has drop shadow and border by default -->
   <ion-card class="card-gap no-shadow ion-no-padding ion-margin-vertical">
     <!-- Header with app Tittle -->
-    <ion-card-header>
-      <!-- All caps text & Center text -->
+    <ion-card-header class="title-line">
+      <ion-button color="task-white" [routerLink]="['/main']">
+        <ion-icon color="task-blue" name="arrow-back"></ion-icon>
+      </ion-button>
+      <!-- Center text -->
       <ion-card-title class="ion-text-center">
         <ion-text color="task-white"> Task </ion-text>
       </ion-card-title>
     </ion-card-header>
+  </ion-card>
+  
+  <ion-card color="task-white" class="main-card">
+
   </ion-card>
 
 </ion-content>
