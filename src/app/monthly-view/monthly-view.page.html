@@ -13,35 +13,121 @@
     </ion-card-header>
   </ion-card>
 
+  <!-- Date picekr -->
+  <ion-datetime presentation="date" [(ngModel)]="datePicked"></ion-datetime>
 
 
+  <!-- List of all tasks -->
+  <ion-content style="height: 25vh !important" scroll-y="true">
+    <div *ngFor="let task of tasks">
+      <!-- Task Card -->
+
+      <ion-card
+        *ngIf="task.date ===(datePicked | date: 'YYYY-MM-dd')"
+        color="task-blue"
+        class="no-shadow ion-no-padding ion-margin-vertical ion-justify-content-start"
+        [routerLink]="['/view-task']"
+      >
+        <!-- Task Card Header And title-->
+        <ion-card-header class="ion-no-padding ion-justify-content-start">
+          <ion-card-title class="ion-text-capitalize task-title"
+            >{{task.title}}</ion-card-title
+          >
+        </ion-card-header>
+        <!-- Task Card Body With Time, Place and Note-->
+        <ion-item
+          color="task-blue"
+          class="ion-no-padding ion-no-margin ion-justify-content-start"
+          lines="none"
+        >
+          <ion-card-subtitle
+            class="ion-text-capitalize ion-justify-content-start task-subtitle"
+            >Time</ion-card-subtitle
+          >
+          <ion-card-content class="task-content">
+            {{task.time}}
+          </ion-card-content>
+        </ion-item>
+        <ion-item
+          color="task-blue"
+          class="ion-no-padding ion-no-margin ion-justify-content-start"
+          lines="none"
+        >
+          <ion-card-subtitle
+            class="ion-text-capitalize ion-justify-content-start task-subtitle"
+            >Place</ion-card-subtitle
+          >
+          <ion-card-content class="ion-text-capitalize task-content">
+            {{task.place}}
+          </ion-card-content>
+        </ion-item>
+        <ion-item
+          color="task-blue"
+          class="ion-no-padding ion-no-margin ion-justify-content-start"
+          lines="none"
+        >
+          <ion-card-subtitle
+            class="ion-text-capitalize ion-justify-content-start task-subtitle"
+            >Notes</ion-card-subtitle
+          >
+          <ion-card-content class="ion-text-capitalize task-content">
+            {{task.note}}
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+    </div>
+  </ion-content>
   <!-- Footer -->
   <ion-footer
     color="task-white"
     class="ion-no-padding ion-no-margin ion-justify-content-start"
     lines="none"
   >
-      <ion-fab-button [routerLink]="['/add-new-task']" class="ion-justify-content-center add-button" color="task-blue">
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-      <ion-item
-        class="ion-no-padding ion-justify-content-center no-shadow"
+    <ion-fab-button
+      [routerLink]="['/add-new-task']"
+      class="ion-justify-content-center add-button"
+      color="task-blue"
+    >
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-item
+      class="ion-no-padding ion-justify-content-center no-shadow"
+      color="task-white"
+      lines="none"
+    >
+      <ion-fab-button
+        [routerLink]="['/monthly-view']"
+        class="ion-no-margin no-shadow"
         color="task-white"
-        lines="none"
       >
-      <ion-fab-button [routerLink]="['/monthly-view']"  class="ion-no-margin no-shadow" color="task-white">
         <ion-icon name="calendar-outline" color="task-blue"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button [routerLink]="['/task-list']"  class="ion-no-margin" color="task-white">
+      <ion-fab-button
+        [routerLink]="['/task-list']"
+        class="ion-no-margin"
+        color="task-white"
+      >
         <ion-icon name="time-outline" color="task-grey"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button [routerLink]="['/find']"  class="ion-no-margin" color="task-white">
+      <ion-fab-button
+        [routerLink]="['/find']"
+        class="ion-no-margin"
+        color="task-white"
+      >
         <ion-icon name="search-outline" color="task-grey"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button [routerLink]="['/alerts-list']"  class="ion-no-margin" color="task-white">
+      <ion-fab-button
+        [routerLink]="['/alerts-list']"
+        class="ion-no-margin"
+        color="task-white"
+      >
         <ion-icon name="alarm-outline" color="task-grey"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button [routerLink]="['/main']"  class="ion-no-margin" color="task-white">
+      <ion-fab-button
+        [routerLink]="['/main']"
+        class="ion-no-margin"
+        color="task-white"
+      >
         <ion-icon name="home" color="task-grey"></ion-icon>
       </ion-fab-button>
     </ion-item>
