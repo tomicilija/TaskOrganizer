@@ -10,6 +10,7 @@ ion-card-title {
 // Image to allow ion-justify-content-center to position in center
 ion-img {
   margin: auto;
+  height: 50vh;
 }
 
 // Center buttons and make them wide and dorp shadow
@@ -28,14 +29,9 @@ ion-card {
   display: flex;
   flex-direction: column;
   align-content: center;
-  height: 100%;
   gap: 50px;
 }
 
-// Make image 50% of screen height
-img {
-  height: 50vh;
-}
 
 // Button font
 ion-button ion-text {

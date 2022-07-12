@@ -1,0 +1,97 @@
+<!-- Main - Landing page when logged in  -->
+<!-- ionic generate page Main -->
+<!-- App is fullscrean and it is one page only without scroll -->
+<ion-content [fullscreen]="true" scroll-y="false">
+  <!-- Card has drop shadow and border by default -->
+  <ion-card class="card-gap no-shadow ion-no-padding ion-margin-vertical ">
+    <!-- Header with app Tittle -->
+    <ion-card-header>
+      <!-- All caps text & Center text -->
+      <ion-card-title class="ion-text-uppercase ion-text-center">
+        <ion-text color="task-blue"> task organizer </ion-text>
+      </ion-card-title>
+    </ion-card-header>
+    <!-- Welcome Image -->
+    <!-- Item has line at th bottom by default and left space -->
+    <ion-item class="ion-no-padding ion-justify-content-center" lines="none">
+      <ion-img
+        class="ion-justify-content-center"
+        src="../../assets/HomeImage.png"
+      ></ion-img>
+    </ion-item>
+  </ion-card>
+  <ion-card
+    color="task-blue"
+    class="no-shadow ion-no-padding ion-margin-vertical ion-justify-content-start"
+  >
+    <ion-card-header class="ion-no-padding ion-justify-content-start">
+      <ion-card-title class="ion-text-capitalize task-title"
+        >Dinner with Anna</ion-card-title
+      >
+    </ion-card-header>
+    <ion-item color="task-blue" class="ion-no-padding ion-no-margin ion-justify-content-start" lines="none">
+      <ion-card-subtitle
+        class="ion-text-capitalize ion-justify-content-start task-subtitle"
+        >Time</ion-card-subtitle
+      >
+      <ion-card-content class="ion-text-capitalize task-content">
+        08.00 pm
+      </ion-card-content>
+    </ion-item>
+    <ion-item color="task-blue" class="ion-no-padding ion-no-margin ion-justify-content-start" lines="none">
+      <ion-card-subtitle
+        class="ion-text-capitalize ion-justify-content-start task-subtitle"
+        >Place</ion-card-subtitle
+      >
+      <ion-card-content class="ion-text-capitalize task-content">
+        Anna's House
+      </ion-card-content>
+    </ion-item>
+    <ion-item color="task-blue" class="ion-no-padding ion-no-margin ion-justify-content-start" lines="none">
+      <ion-card-subtitle
+        class="ion-text-capitalize ion-justify-content-start task-subtitle"
+        >Notes</ion-card-subtitle
+      >
+      <ion-card-content class="ion-text-capitalize task-content">
+        don't forget to give her a bouquet of flowers
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+  <ion-card
+    color="task-blue"
+    class="no-shadow ion-no-padding ion-justify-content-start"
+  >
+    <ion-card-header class="ion-no-padding ion-justify-content-start">
+      <ion-card-title class="ion-text-capitalize task-title"
+        >Pay House Tax</ion-card-title
+      >
+    </ion-card-header>
+    <ion-item color="task-blue" class="ion-no-padding ion-no-margin ion-justify-content-start" lines="none">
+      <ion-card-subtitle
+        class="ion-text-capitalize ion-justify-content-start task-subtitle"
+        >Time</ion-card-subtitle
+      >
+      <ion-card-content class="ion-text-capitalize task-content">
+        08.00 am
+      </ion-card-content>
+    </ion-item>
+    <ion-item color="task-blue" class="ion-no-padding ion-no-margin ion-justify-content-start" lines="none">
+      <ion-card-subtitle
+        class="ion-text-capitalize ion-justify-content-start task-subtitle"
+        >Place</ion-card-subtitle
+      >
+      <ion-card-content class="ion-text-capitalize task-content">
+        Tax Office
+      </ion-card-content>
+    </ion-item>
+    <ion-item color="task-blue" class="ion-no-padding ion-no-margin ion-justify-content-start" lines="none">
+      <ion-card-subtitle
+        class="ion-text-capitalize ion-justify-content-start task-subtitle"
+        >Notes</ion-card-subtitle
+      >
+      <ion-card-content class="ion-text-capitalize task-content">
+        Nothing
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+</ion-content>
