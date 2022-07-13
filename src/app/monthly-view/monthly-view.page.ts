@@ -17,7 +17,7 @@ export class MonthlyViewPage implements OnInit {
   }[] = [
     {
       title: 'Meeting with Anomali Team',
-      date: '2022-07-01',
+      date: '2022-07-03',
       time: '07:00',
       duration: '3',
       place: 'Anomali Office',
